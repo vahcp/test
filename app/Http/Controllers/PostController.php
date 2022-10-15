@@ -11,6 +11,10 @@ class PostController extends Controller
     {
         return view('posts/index')->with(['posts' => $post->getPaginateByLimit(1)]);
     }
+    public function create()
+    {
+        return view('posts/create');
+    }
 
 }
 ?>
